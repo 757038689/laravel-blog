@@ -13,7 +13,7 @@ class CreateAdminsTale extends Migration
      */
     public function up()
     {
-        Schema::create('admins_tale', function (Blueprint $table) {
+        Schema::create('admins', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
             $table->string('email')->unique();
@@ -30,6 +30,6 @@ class CreateAdminsTale extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('admins_tale');
+        Schema::dropIfExists('admins');
     }
 }

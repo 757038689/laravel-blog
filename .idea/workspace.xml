@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="956141d8-1b3c-421c-8220-27ca2c1a5b69" name="Default Changelist" comment="" />
+    <list default="true" id="956141d8-1b3c-421c-8220-27ca2c1a5b69" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_11_163119_create_admins_tale.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +16,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -114,6 +121,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ZzP5N1fsMfArDyzP88TkbJ56kg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -121,6 +129,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="C:/ETC_Server" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -145,6 +154,7 @@
       <workItem from="1586099400492" duration="209000" />
       <workItem from="1586366257930" duration="2016000" />
       <workItem from="1586441066719" duration="7202000" />
+      <workItem from="1586620065587" duration="1598000" />
     </task>
     <servers />
   </component>

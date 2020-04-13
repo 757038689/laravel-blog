@@ -8,6 +8,23 @@ use Auth;
 
 class UserController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth', [
+            'except' => ['show', 'create', 'store']
+        ]);
+
+        $this->middleware('guest', [
+            'only' => ['create']
+        ]);
+    }
+
+    public function index()
+    {
+        $users = User::paginate(2);
+        return view('user.index', compact('users'));
+    }
+
     public function show(User $user)
     {
         return view('user.show', compact('user'));
@@ -36,5 +53,27 @@ class UserController extends Controller
         session()->flash('success', '欢迎，您将在这里开启一段新的旅程~');
         return redirect()->route('user.show', [$user]);
 
+    }
+
+    public function edit(User $user)
+    {
+        $this->authorize('update', $user);
+        return view('user.edit', compact('user'));
+    }
+
+    public function update(User $user, Request $request)
+    {
+        $this->authorize('update', $user);
+        $this->validate($request, [
+            'name' => 'required|max:50',
+            'password' => 'required|confirmed|min:6'
+        ]);
+
+        $user->update([
+            'name' => $request->name,
+            'password' => bcrypt($request->password),
+        ]);
+
+        return redirect()->route('user.show', $user->id);
     }
 }
